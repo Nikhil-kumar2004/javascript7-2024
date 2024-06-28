@@ -7,6 +7,7 @@ error is printed but var is reassigned ->except in the case of functions.
 */
 
 accounthandler="nikhil"//definitely not preferred but it does run.
+account2; //undefined.
 
 console.log(accountId)
 
