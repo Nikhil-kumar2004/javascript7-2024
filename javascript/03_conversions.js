@@ -24,4 +24,3 @@ let avg=undefined
 let k=String(avg)
 console.log(typeof k) //string
 console.log(k)// null / undefined
-//string conversion doesn't have exception.
