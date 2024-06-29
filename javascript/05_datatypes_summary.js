@@ -32,8 +32,9 @@ console.log(typeof fun) //function -->function object, more specificely.
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //Memory-->Stack and Heap
 /*
-Stack-->Primitive
-Heap-->Reference
+Stack-->Primitive //The stack is a region of memory that stores temporary variables
+Heap-->Reference //The heap is a region of memory used for dynamic memory allocation, 
+where variables are allocated and freed manually.
 */
 let person="nikhil"
 let persontwo=person;// copy of person's data is given not the address.
