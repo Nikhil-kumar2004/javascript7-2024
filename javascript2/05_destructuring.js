@@ -10,11 +10,11 @@ console.log(Inst)
 const {}=user
 
 //JSON Format.-->API gives data in this format.
-{
-    "name":nikhil
-}
-[
-    {},
-    {},
-    {}
-]
+// {
+//     "name":nikhil
+// }
+// [
+//     {},
+//     {},
+//     {}
+// ]

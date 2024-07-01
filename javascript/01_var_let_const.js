@@ -6,7 +6,7 @@ var accountname="nikhil's account"// not preferred as not block scoped but funct
 error is printed but var is reassigned ->except in the case of functions.
 */
 
-accounthandler="nikhil"//definitely not preferred but it does run.
+accounthandler="nikhil"//definitely not preferred but it does run. //scope is same as var.
 account2; //undefined.
 
 console.log(accountId)
