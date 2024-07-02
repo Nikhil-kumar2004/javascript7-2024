@@ -72,5 +72,6 @@ const api=[          //most common format.
     }
 ]
 api.forEach( (item) => {            //made easy.
+    //item.name="nikk" //modification is possible.
     console.log(item.name)
 })
