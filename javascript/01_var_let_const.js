@@ -7,7 +7,7 @@ error is printed but var is reassigned ->except in the case of functions.
 */
 
 accounthandler="nikhil"//definitely not preferred but it does run. //scope is same as var.
-account2; //undefined.
+account2; //undefined. //error without let or var
 
 console.log(accountId)
 
