@@ -20,4 +20,4 @@ console.log(Array.from({name:"nikk"})) //[]-->interesting case
 
 const a=1
 const b=2
-console.log(Array.of(a,b))
+console.log(Array.of(a,b))  //from will give error
