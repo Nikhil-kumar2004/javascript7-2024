@@ -3,7 +3,7 @@ const user={
     courseInstructor:"me"
 }
 const {courseInstructor}=user //destructuring.
-console.log(courseInstructor) //instead of course.courseInstructor
+console.log(courseInstructor) //instead of user.courseInstructor
 
 const {courseInstructor:Inst}=user
 console.log(Inst)
