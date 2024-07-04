@@ -19,7 +19,7 @@ console.log(date2.getTime()) //gives time of that date in ms.
 //now i can compare date2 and todays date.
 console.log(Math.floor(Date.now()/1000)) //(**) converted to seconds without decmial places.
 
-let date4=date2.toLocaleString('default',{  //(**) customization.
+let date4=date2.toLocaleString('en-IN',{  //(**) customization.
     weekday: "long"
 })
 console.log(date4) //monday.
