@@ -1,7 +1,7 @@
 let score=undefined
 let scoreno=Number(score)
 console.log(typeof(scoreno)) //number
-console.log(scoreno) //33
+console.log(scoreno) //NaN
 
 /*
 all the below will get converted and type will be number but while printing result will be 
