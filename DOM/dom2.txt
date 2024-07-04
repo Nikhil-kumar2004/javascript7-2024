@@ -1,0 +1,27 @@
+    const val= document.getElementsByClassName('parent') //gives htmlcollection not parent tags with child tags
+    const val2= document.querySelector('.parent')
+    console.log(val2)
+    console.log(val2.children)  //HTMLCollection
+    console.log(val2.children[2])
+    console.log(val2.children[2].innerHTML)
+    //cant do val2.children.innerHTML as it contains all childrens have to do individually.
+    //can't do like this even if we have only 1 children, have to use index.
+
+    for (let i = 0; i < val2.children.length; i++) {  //as forEach can't be applied.
+        const element = val2.children[i].innerHTML
+        console.log(element)     
+    }
+    val2.children[1].style.color='orange'
+    console.log(val2.firstElementChild) //(**)
+    console.log(val2.lastElementChild) //(**)
+    
+    const chld=document.querySelector('.day')
+    console.log(chld)
+    console.log(chld.parentElement)  //whole parent tag with all child tags.
+    console.log(chld.nextElementSibling)
+
+    const parent=document.querySelector('.parent')
+    console.log(parent.childNodes)  //(**) tree structure is made behind the scene.
+    //It give child nodes + enter taps(spaces)  //Enters are considered text nodes.
+    //multiple spaces or taps between two lines are ignored.
+    [text,div.day,text,div.day,....]

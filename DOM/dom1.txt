@@ -55,6 +55,6 @@ allli.forEach((l) =>){
 
 //HTMLCollection doesn't have foreach and map so, have to convert it into array.
 const htmlcoll=getElementByClassName('list-ul')
-cosnt myarr = Array.from(ntmlcoll)
+const myarr = Array.from(htmlcoll)
 //now can do looping.
 

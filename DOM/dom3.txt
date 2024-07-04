@@ -1,0 +1,53 @@
+   const div=document.createElement('div')
+    console.log(div)
+    div.id='title'
+    div.className=Math.round(Math.random()*10+1)
+    div.setAttribute('title','mytitle')
+    div.style.backgroundColor='green'
+    div.innerTEXT="nikhil kumar"   //value overwrites.
+    const node=document.createTextNode(" hey")
+    div.appendChild(node)  //value is added not overwritten.
+
+//setAttribute overwrites directly onto the div but when we overwrite using '.'(.className) then it firstly brings the
+//reference and then overwrite and then paste -->so there is an extra round trip.
+
+//all these are displayed on console but not page as it's in memory and we need to attach this child onto
+//document.
+
+    document.body.appendChild(div) //(**)
+
+function appendchild(language){
+        const myul=document.querySelector('.language')
+        const li=document.createElement('li')
+        li.innerText=language
+        myul.appendChild(li)
+    }
+function appendchild2(language){
+        const myul=document.querySelector('.language')
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(language))
+        myul.appendchild(li)
+    }
+    appendchild('Python')
+    appendchild('golang')
+
+//li.innerTEXT traverses whole tree structure so if we have 1000 list elements then it will take time
+//whereas appendChild appends directly at the last.
+
+// The latter (appendChild) does not cause a complete rebuild of the DOM or even all of the elements/nodes 
+// within the target.
+
+// The former (setting innerHTML) does cause a complete rebuild of the content of the target element
+
+const secondlang=document.querySelector('li:nth-child(2)')
+    secondlang.innerHTML='C++'
+
+    const li=document.createElement('li')
+    li.textContent='java'
+    secondlang.replaceWith(li)
+
+    let firstchild=document.querySelector('li:first-child')
+    firstchild.outerHTML="<li> Mojo </li>"
+    
+    const lastchild=document.querySelector('li:last-child')
+    lastchild.remove()
