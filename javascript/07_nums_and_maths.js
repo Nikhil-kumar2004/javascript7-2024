@@ -1,6 +1,6 @@
 const num=300 //js detects it to be a number. 
 const num2=new Number(300) //we explicitly defines it to be number//object->type
-//i.e. it has to be a number 100%
+//i.e. it has to be a number 100%  , Number('300a')-->[Number: NaN]
 console.log(num)//300
 console.log(num2) //[Number: 300]
 
