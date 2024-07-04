@@ -48,5 +48,5 @@ let obj1 = {
 }
 obj2=obj1 //reference of address is given where data is stored.
 obj2.age=24
-console.log(obj1.age)
-console.log(obj2.age)
+console.log(obj1.age) //24
+console.log(obj2.age) //24
