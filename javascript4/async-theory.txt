@@ -1,0 +1,23 @@
+javascript is a : synchronous and single threaded (Default) language due to which it could had been slow but this 
+js engine is not run singly rather on various runtime environments do to which we feel that it's multi
+threaded.
+
+as we have seen in execution context : execution of one line of code at a time takes place and each operation
+waits for the last one to complete before executing.
+
+Blocking Code : blocks the flow of the program -> Read file sync
+Non-Blocking Code : does not blocks the flow of execution -> Read file async
+
+e.g. when kernal/pc is reading some file the in blocking code the code doesn't do anything until reading
+is done.
+
+situation: during registration we have to wait for data to be stored at the db and then to notify the 
+customer that you data is saved. so, have to write blocking code only.
+
+-->we have usecases for blocking and non-blocking --> both are equally best.
+
+Event loop:
+//"C:\Users\Nikhilkr\Pictures\Screenshots\Screenshot 2024-07-07 100754.png"
+
+
+
