@@ -1,4 +1,4 @@
-//setinterval,settimeout,cleartimeout,clearinterval --> functions.
+//setinterval,settimeout,cleartimeout,clearinterval --> functions and are part of asyncronous code.
 //these are all a part of browser api, it's runtime environment etc.. and not a part of core js.
 //(see the diagram on events.js to clarify.)
 
