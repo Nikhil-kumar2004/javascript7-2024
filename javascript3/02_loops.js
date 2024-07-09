@@ -29,7 +29,7 @@ let obj={
 }
 // for(const [key,value] of obj){     //obj is not iterable.
 //     console.log(key)
-// }
+// }                                  //for(const [key,value] of Object.entries(obj)) -->now iterable.
 
 //for in --> iterate over enurable properties.
 
