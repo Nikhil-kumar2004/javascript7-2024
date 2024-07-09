@@ -33,7 +33,7 @@ Steps:
 
 ## need of new keyword
 function User(username,logincount,isloggedin){
-    this.username=username
+    this.username=username          //this is used to tell which username is keyword is ours.
     this.logincount=logincount
     this.isloggedin=isloggedin    // return this; is implicitly defined and object will be printed.
 }
