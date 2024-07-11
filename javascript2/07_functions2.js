@@ -24,13 +24,14 @@ console.log(this)//{} //as there are on global context in node enviornment.
 function chai(){
     let username="nikhil"
     console.log(this) //lots of values.
-    console.log(this.username)  //undefined  //this context works only inside objects not functions.
+    console.log(this.username)  //undefined
 }
 //arrow function
-const arr = () =>{
+function arr(name){
     let username="nikhil"
-    console.log(this.username)  //undefined.
-}
+    console.log(this.username)  //undefined.  //can't use like this.
+} //Local variables inside the function are not properties of the this object.
+arr()
 
 const arr2 = (num1,num2) =>{  //explicit return
     return num1+num2

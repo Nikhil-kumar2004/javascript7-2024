@@ -8,7 +8,7 @@ const arr4=arr2.concat(arr3) //makes new array and doesn't change arr2.
 //not preferred as difficulty in concatenation of more than 2 arrays.
 console.log(arr4) 
 
-const arr5=[...arr2,...arr3,...arr4] //preferred.
+const arr5=[...arr2,...arr3,...arr4] //preferred  //spread operator
 console.log(arr5)
 
 const arr6=arr1.flat(1) //[1,2,3,4,4,5,6] //Infinity--> if many levels of array inside array.

@@ -1,8 +1,8 @@
 const obj=new Object() //singleton object.
-const obj2={} //non-singleton object.
+const obj2={} //non-singleton object.     //see singleton vs non-singleton
 obj2.id="123abc" //insertion.
-console.log(typeof obj)
-console.log(typeof obj2)
+console.log(typeof obj) //object.
+console.log(typeof obj2) //object.
 
 const regularUser={
     fullname:{
