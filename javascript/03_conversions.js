@@ -23,4 +23,4 @@ null,undefined-->false
 let avg=undefined
 let k=String(avg)
 console.log(typeof k) //string
-console.log(k)// null / undefined
+console.log(k)// undefined

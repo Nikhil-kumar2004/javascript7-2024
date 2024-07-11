@@ -2,7 +2,7 @@ let name="  nikhil kumar  "
 let age="20"
 console.log("hi " + name + " you are "+age) //old way.
 console.log(`Hi ${name} you are ${age}`) //more readable //modern way 
-// called string interpolation
+// called string interpolation (backticks)
 const str=new String("nikk") //using objects of javascript.
 console.log(typeof str)  //object.
 console.log(name.length)
