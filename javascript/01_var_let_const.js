@@ -1,4 +1,4 @@
-const accountId="123@gmail.com" //preferred
+const accountId="123@gmail.com" //preferred it's function scoped,global scoped and block scoped.
 let accountpassword="1234" //preferred as it's function scoped,global scoped and block scoped.
 var accountname="nikhil's account"// not preferred as not block scoped but function and global scoped.
 
@@ -7,7 +7,7 @@ error is printed but var is reassigned ->except in the case of functions.
 */
 
 accounthandler="nikhil"//definitely not preferred but it does run. //scope is same as var.
-account2; //undefined. //error without let or var
+//account2; //undefined. //error without let or var
 
 console.log(accountId)
 
@@ -18,4 +18,4 @@ if(this){
     var key2="hey"
 }
 console.log(key2)
-console.log(key)//error as let is block scoped.
+//console.log(key)//error as let is block scoped.
