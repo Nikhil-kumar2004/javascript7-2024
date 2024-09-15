@@ -1,4 +1,7 @@
 //Primitive-->call by value(copy)-->stores data of only one type.
+//When assigned or passed, a copy of the value is made.
+//Immutable: Once a primitive value is created, it cannot be altered. For example, if you modify a string, 
+//a new string is created.
 //7 types-->number,string,boolean,null,undefined,bigint,symbol.
 
 const Id=Symbol("123")
@@ -11,6 +14,7 @@ console.log(typeof bigInt) //bigint
 
 //Reference(Non-Primitive)-->call by reference(address)-->can sore more than 1 type of data.
 //3 types-->Array,Object,Function
+// They are mutable, and when assigned or passed, a reference to the object is shared, not the object itself.
 
 let arr=["nikhil",84,"hey"]
 let obj={
@@ -32,7 +36,7 @@ console.log(typeof fun) //function -->function object, more specificely.
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //Memory-->Stack and Heap
 /*
-Stack-->Primitive //The stack is a region of memory that stores temporary variables
+Stack-->Primitive,function calls //The stack is a region of memory that stores temporary variables
 Heap-->Reference //The heap is a region of memory used for dynamic memory allocation, 
 where variables are allocated and freed manually.
 */
