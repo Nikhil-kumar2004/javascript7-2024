@@ -5,6 +5,10 @@ console.log(`Hi ${name} you are ${age}`) //more readable //modern way
 // called string interpolation (backticks)
 const str=new String("nikk") //using objects of javascript.
 console.log(typeof str)  //object.
+//declaration directly is lighter and with constructor it's heavier(more memory)
+//Comparisons between two primitives are value-based (=== works as expected)-->normal declaration.
+//Comparisons between two objects are reference-based (=== returns false even if values match)-->contructor.
+//constructors are avoided as it sometime leads to unexpected behavior. 
 console.log(name.length)
 console.log(name.toUpperCase()) //string has various methods.
 console.log(name.charAt(2))
