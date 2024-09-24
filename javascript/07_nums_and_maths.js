@@ -22,7 +22,7 @@ console.log(num4.toLocaleString('en-IN'))// indian standard. //1,00,00,00,000
 //Math is a built-in object in JavaScript that provides properties and methods for mathematical constants 
 //and functions
 
-console.log(Math)// object
+console.log(Math)// Object [Math] {}
 console.log(Math.PI) //property logn,sqrt
 console.log(Math.abs(-4))//methods
 console.log(Math.round(4.23)) //can't tell how many decimal place->gives rounded integer.
