@@ -1,6 +1,18 @@
 const arr=[1,2,"nikhil"]
 //arrays in js are resizable and can contain mix of values.
-//it makes shallow copy(pointing to same reference) not deep copy(do not share same reference)
+//it makes shallow copy(pointing to same reference) as well as deep copy(do not share same reference)
+
+//"An array can make both shallow and deep copies depending on the data types it contains. For primitive data 
+//types (like numbers, strings, booleans), deep copies are made because they are copied by value. For objects 
+//(including arrays), shallow copies are made because only references to the objects are copied."
+
+let originalArray = [1, 2, {a: 3}];
+let shallowCopy = [...originalArray];
+shallowCopy[2].a = 50; 
+shallowCopy[0]=100
+console.log(originalArray); // [1, 2, {a: 50}]
+console.log(shallowCopy);   // [100, 2, {a: 50}]
+//object is non-primitive so, creating deep copy.
 
 arr.push(4)
 arr.pop()

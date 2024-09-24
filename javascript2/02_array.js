@@ -16,8 +16,10 @@ console.log(arr6)
 
 console.log(Array.isArray("nikk")) //false
 console.log(Array.from("nik")) //['n','i','k']
+//arr.for() -> Converts array-like or iterable objects into arrays.
 console.log(Array.from({name:"nikk"})) //[]-->interesting case
 
 const a=1
 const b=2
-console.log(Array.of(a,b))  //from will give error
+console.log(Array.of(a,b))  //[1,2] //from will give error
+//arr.of() -> Creates an array from individual arguments.
