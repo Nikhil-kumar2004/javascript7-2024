@@ -1,5 +1,10 @@
-const obj=new Object() //singleton object.
+const obj=new Object() //singleton object.??
 const obj2={} //non-singleton object.     //see singleton vs non-singleton
+const obj1 = new Object();
+console.log(obj1 === obj); // false (different instances)
+const obj11 = {};
+console.log(obj11 === obj2); // false (different instances)
+//Both new Object() and {} create non-singleton objects because they produce unique, independent instances.
 obj2.id="123abc" //insertion.
 console.log(typeof obj) //object.
 console.log(typeof obj2) //object.
