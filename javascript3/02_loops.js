@@ -32,7 +32,7 @@ let obj={
 // }                                  //for(const [key,value] of Object.entries(obj)) -->now iterable.
 
 //for in --> iterate over enurable properties.
-
+//enumerable objects refer to objects whose properties (or elements) can be iterated over
 for(const key in obj){
     console.log(obj[key])
 }
